@@ -24,6 +24,14 @@
   }
 
    
+  .sidebar .logo-details i{
+      font-size: 28px;
+      font-weight: 500;
+      color: #fff;
+      min-width: 60px;
+      text-align: center;
+  }
+
   .sidebar .logo-details .logo-name{
       color: #1E2125;
       font-size: 24px;
@@ -49,9 +57,12 @@
       background-color: #FF014F;
   }
   /* todo */
-/* .sidebar .nav-links li i{
-
-} */
+.sidebar .nav-links li i{
+    min-width: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: #3C3E41;
+}
 
 .sidebar .nav-links li a .links-name{
     color: #3C3E41;
@@ -82,7 +93,7 @@ left: 240px;
     z-index: 100;
     padding: 0 20px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    }
+}
 .sidebar.active ~ .homepage-section nav{
     left: 60px;
     width: calc(100%-60px);
