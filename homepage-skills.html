@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Skill || Homepage</title>
+</head>
+<body>
+    <!-- sidebar starts here -->
+    <div class="sidebar">
+        <div class="logo-details">
+            <i class='bx bx-support'></i>
+            <span class="logo-name">Admin Panel</span>
+        </div>
+        <ul class="nav-links" >
+            <li class="active">
+                <a href="homepage.html">
+                    <i class='bx bx-home-smile'></i>
+                    <span class="links-name">Home Page</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="features.html">
+                    <i class='bx bx-user-circle'></i>
+                    <span class="links-name">Features</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="portfolio.html">
+                    <i class='bx bx-git-branch'></i>
+                    <span class="links-name">Portfolio</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="resume.html">
+                    <i class='bx bx-id-card'></i>
+                    <span class="links-name">My Resume</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="testimonial.html">
+                    <i class='bx bx-network-chart' ></i>
+                    <span class="links-name">Testimonial</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="pricing.html">
+                    <i class='bx bx-purchase-tag' ></i>
+                    <span class="links-name">My Pricing</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="blog.html">
+                    <i class='bx bxl-blogger' ></i>
+                    <span class="links-name">My Blog</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- sidebar ends here -->
+     <!-- homepage section start here -->
+     <section class="homepage-section">
+        <!-- navbar starts here -->
+        <nav>
+             <div class="sidebar-button">
+                <i class="bx bx-menu sidebarBtn"></i>
+            </div>
+            <div class="hompage">
+                <span class="home">
+                    <a href="homepage.html">HomePage</a> </span>
+            </div>
+            <div>
+                <span class="contact">
+                    <a href="homepage-contact.html">Contact</a> </span>
+            </div>
+            <div>
+                <span class="best-skill">
+                    <a href="homepage-skills.html">Best Skill</a> </span>
+            </div>
+        </nav>
+        <!-- navbar ends here -->
+
+        <!-- home-content starts here -->
+
+            <div class="home-content">
+                <div class="best-skills">
+                    <h2>--Best Skill on</h2>
+                </div>
+                <div class="card-images">
+                    <div class="card">
+                        <img src="demoimg.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h4><b>First Image</b></h4> 
+                          <p>Description</p>
+                          <label for="file-upload" class="custom-file-upload btn btn-dark">
+                            Choose File
+                       </label>
+                       <input id="file-upload" type="file"/>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="demoimg.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h4><b>Second Image</b></h4> 
+                          <p>Description</p> 
+                          <label for="file-upload" class="custom-file-upload btn btn-dark">
+                            Choose File
+                       </label>
+                       <input id="file-upload" type="file"/>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="demoimg.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                          <h4><b>Third Image</b></h4> 
+                          <p>Description</p> 
+                          <label for="file-upload" class="custom-file-upload btn btn-dark">
+                            Choose File
+                       </label>
+                       <input id="file-upload" type="file"/>
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    <br><br>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-dark">Save</button>
+                </p>
+                        <br><hr><br>
+                </div>
+            </div>  
+        </section>
+        <script>
+            let sidebar = document.querySelector(".sidebar");
+         let sidebarBtn = document.querySelector(".sidebarBtn");
+         sidebarBtn.onclick = function() {
+           sidebar.classList.toggle("active");
+           if(sidebar.classList.contains("active")){
+           sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+         }else
+           sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+         }
+          </script>
+</body>
+</html>
