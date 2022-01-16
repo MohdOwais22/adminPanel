@@ -192,6 +192,7 @@ transition: all 0.5s ease;
 
 .homepage-section .testimonials-content{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .topnav {
@@ -314,7 +315,7 @@ transition: all 0.5s ease;
   }
   
 }
-@media (max-width: 763px) and (min-width: 500px){
+@media (max-width: 763px) and (min-width: 420px){
   .sidebar{
     width: 60px;
   }
@@ -371,6 +372,4 @@ transition: all 0.5s ease;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
-
 }
