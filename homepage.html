@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Admin Panel</title>
 </head>
 
@@ -69,23 +70,24 @@
     <section class="homepage-section">
         <!-- navbar starts here -->
         <nav>
-            
-             <div class="sidebar-button">
-                <i class="bx bx-menu sidebarBtn"></i>
-            </div>
-            <div class="homepage">
-                <span class="home">
-                    <a href="#">HomePage</a> </span>
-            </div>
-            <div>
-                <span class="contact">
-                    <a href="homepage-contact.html">Contact</a> </span>
-            </div>
-            <div>
-                <span class="best-skill">
-                    <a href="homepage-skills.html">Best Skill</a> </span>
-            </div>
-        
+            <div class="topnav" id="myTopnav">
+            <div class="sidebar-button">
+               <i class="bx bx-menu sidebarBtn"></i>
+           </div>
+           <div class="hompage">
+               <span class="home">
+                   <a href="homepage.html">HomePage</a> </span>
+           </div>
+           <div>
+               <span class="contact">
+                   <a href="homepage-contact.html">Contact</a> </span>
+           </div>
+           <div>
+               <span class="best-skill">
+                   <a href="homepage-skills.html">Best Skill</a> </span>
+           </div>
+           <div class="empty"></div>
+        </div>
         </nav>
         <!-- navbar ends here -->
 
@@ -94,7 +96,7 @@
         <div class="home-content">
             <div class="profile-page">
                 <h2>--Update Info</h2>
-                <p>Profile Name : &#160;&#160;&#160;&#160;&#160;<input type="text" placeholder="Name Here..." width="40px">&#160;&#160;
+                <p>Profile Name : <input type="text" placeholder="Name Here..." width="40px">
                 <!-- <input type="submit" value="Save"></p>
                  --><label for="save" class="btn btn-dark">
                     Save
