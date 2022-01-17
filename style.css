@@ -184,16 +184,16 @@ transition: all 0.5s ease;
 .homepage-section .testimonial-content{
   position: relative;
   padding-top: 104px;
-  margin-left: 70px;
+  margin-left: 3rem;
 }
 .sidebar.active ~ .homepage-section .testimonial-content{
   margin-left: 8vw;
 }
 
-.homepage-section .testimonials-content{
+/* .homepage-section .testimonials-content{
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 .topnav {
      /* overflow: hidden; */
@@ -232,6 +232,7 @@ transition: all 0.5s ease;
 .topnav .icon {
   display: none;
 }
+
 
 
   /* media query */
@@ -315,7 +316,8 @@ transition: all 0.5s ease;
   }
   
 }
-@media (max-width: 763px) and (min-width: 420px){
+@media (max-width: 763px) and (min-width: 500px){
+  
   .sidebar{
     width: 60px;
   }
@@ -328,6 +330,7 @@ transition: all 0.5s ease;
   .homepage-section{
     width: calc(100% - 60px);
     left: 60px;
+    height: 200vh;
   }
   
   .homepage-section .home-content{
@@ -372,4 +375,65 @@ transition: all 0.5s ease;
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+@media (max-width: 500px){
+ 
+  .sidebar{
+    width: 60px;
+  }
+  .sidebar.active{
+   display: none;
+  }
+  .sidebar-button{
+    display: none;
+  }
+  .homepage-section{
+    width: calc(100% - 60px);
+    left: 60px;
+    height: 200vh;
+  }
+  
+  .homepage-section .home-content{
+    width: calc(100% - 60px);
+  }
+  .features-section .features-content{
+    width: calc(100% - 60px);
+  }
+  .features-section .sidebar-button{
+    display: none;
+  }
+  .nav.sidebar-button{
+    display: none;
+  }
+  .homepage-section nav{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .homepage-section nav .topnav{
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+  .features-section nav{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .features-section nav .topnav{
+    left: 60px;
+    width: calc(100% - 60px);
+  }
+  .sidebar.active ~ .homepage-section nav{
+    display: none;
+  }
+  .sidebar.active ~ .features-section nav{
+    display: none;
+  }
+  .card-images{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio-cards{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
 }
