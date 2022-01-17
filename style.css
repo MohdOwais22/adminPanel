@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
   }
+  body{
+    background-color: #f5f5f5;
+  }
   .sidebar{
     position: fixed;
     height: 100%;
@@ -404,7 +407,8 @@ transition: all 0.5s ease;
   .homepage-section{
     width: calc(100% - 60px);
     left: 60px;
-    height: 200vh;
+    height: 225vh;
+    width: 150vw;
   }
   
   .homepage-section .home-content{
