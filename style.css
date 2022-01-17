@@ -111,6 +111,7 @@ transition: all 0.5s ease;
 .homepage-section .home-content {
    position: relative;
    padding-top: 104px;
+   margin-left: 3rem;
 }
 
 .home-content .profile-page{
@@ -190,10 +191,10 @@ transition: all 0.5s ease;
   margin-left: 8vw;
 }
 
-/* .homepage-section .testimonials-content{
+.homepage-section .testimonials-content{
   display: flex;
   flex-wrap: wrap;
-} */
+}
 
 .topnav {
      /* overflow: hidden; */
@@ -233,6 +234,19 @@ transition: all 0.5s ease;
   display: none;
 }
 
+.homepage-section .home-content-skill{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: calc(100% - 220px);
+    left: 60px;
+    position: relative;
+    padding-top: 104px;
+    /* margin-left: 1rem; */
+}
+.sidebar.active ~ .homepage-section .home-content-skill{
+  margin-left: 8vw;
+}
 
 
   /* media query */
